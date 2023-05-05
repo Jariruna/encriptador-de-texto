@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Alura</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
+    
+</head>
+<body>
+    <header class="Header">
+        <img class="logo" id="logo" src="imagenes/Logo.png" alt="logo alura">
+        <p class="titulo">Encriptador Alura</p>
+                   
+    </header>
+    <main class="contenedor">
+       <section class="izquierdo">
+            <div class="textarea">
+                <textarea class="ladoIzq" name="ladoIzq" id="ladoIzq" placeholder="Escribe tu texto aqui"></textarea>
+            </div>
+            <div class="exclamacion">
+                
+                <p class="advertencia"><img class="signo" src="imagenes/bi_exclamation-circle-fill.png" alt="signo de advertencia"> Solo minusculas y sin acento</p>
+            </div>
+            <div class="botones">
+                <button class="btn1" id="btn1" type="button" onclick="encriptar()">Encriptar</button>
+                <button class="btn2" id="btn2" type="button" onclick="desencriptar()">Desencriptar</button>
+            </div>
+       </section>
+       <section class="derecho">
+            <div id="contenedorImg" class="contenedorImg">
+                <img class="muneco" id="muneco" name="muneco" src="imagenes/muneco.png" alt="muneco">
+            </div>
+            
+            <div class="letras" id="letras">
+                <h2 id="letrash2">Ningun texto fue encontrado</h2>
+                <p id="letrasp">Ingrese el texto que desde encriptar o desdencriptar</p>
+            </div>
+            
+            <div class="contBtnDer">
+                <textarea readonly class="ladoDer" name="ladoDer" id="ladoDer" cols="30" rows="10"></textarea>
+                <button id="copiar" class="btnCopiar" type="button" onclick="copiar()">Copiar</button>
+            </div>
+            
+       </section>
+              
+    </main>
+    <footer>
+        <div class="copy">
+            <h1>José Luis Ninaco Salazar</h1>
+        </div>
+    </footer>
+
+    <script src="archivo.js"></script>
+   
+</body>
+
+
+
+</html>

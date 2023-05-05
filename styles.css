@@ -1,0 +1,299 @@
+
+*{
+    margin: 0;
+    background: #f3f5fc;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+.header{
+    
+    width: 100%;
+    height: 70px;
+    left: 10px;
+    
+}
+
+.logo{
+    margin-top: 10px;
+    left: 10%;
+    position: absolute;
+}
+.titulo{
+    margin-left: 10px;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 20%;
+}
+.contenedor{
+    
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.izquierdo{
+    
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.textarea{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#ladoIzq{
+    display: flex;
+    width: 80%;
+    height: 90%;
+    resize: none;
+    border: none;
+}
+#ladoIzq:focus{
+    outline: none;
+}
+#lado::-webkit-input-placeholder{
+    color: #0A3871;
+}
+.exclamacion{
+    width: 100%;
+    display: flex;
+    margin-left: 10%;
+    position: relative;
+    top: -20px;
+}
+.advertencia{
+    font-size: 14px;
+}
+.signo{
+    margin-top: 2px;
+}
+.botones{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btn1{
+    background-color: #0a3871;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    height: 57px;
+    width: 200px;
+}
+.btn2{
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    margin-left: 50px;
+    font-size: 18px;
+    height: 57px;
+    width: 200px;
+}
+.btn1:hover{
+    height: 60px;
+    width: 205px;
+} 
+.btn2:hover{
+    margin-left: 50px;
+    height: 60px;
+    width: 205px;
+}
+.derecho{
+   
+    width: 25%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contenedorImg{
+    width: 90%;
+    height: 40%;
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    background: transparent;
+}
+.muneco{
+    position: relative;
+    background: transparent;
+}
+.letras{
+    width: 90%;
+    position: absolute;
+    z-index: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    height: 40%;
+    top: 50%;
+    background: transparent;
+}
+#letrash2{
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    background: transparent;
+}
+#letrasp{
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    background: transparent;
+}
+.contBtnDer{
+    height: 100%;
+    flex-direction: column;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.ladoDer{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 24px;
+    resize: none;
+    top: -5%;
+}
+.ladoDer:focus{
+    outline: none;
+}
+.btncopiar{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 84%;
+    z-index: 1;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    height: 57px;
+    width: 200px;
+    font-size: 18px;
+    padding: 18px;
+    visibility: hidden; 
+}
+.btncopiar:hover{
+    margin: 0.3%;
+    height: 60px;
+    width: 205px;
+}
+.copiar{
+    display: flex;
+    position: relative;
+    top: 80%;
+    
+}
+
+.copy{
+    
+    width: 100%;
+    height: 70px;
+}
+.copy h1{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 28px;
+    
+}
+
+/* Media QUERY para celulares*/
+
+@media screen and (max-width: 600px) {
+    body{
+        display: grid;
+        min-height: 100vh;
+        grid-template-rows: auto 1fr auto;
+    }
+    .header{
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+    }
+    .logo{
+        left: 10%;
+        position: absolute;
+        top: 1px;
+    }
+    .titulo{
+        left: 30%;
+        font-weight: 400;
+    }
+    .contenedor {
+      width: 100%;
+      display: block;
+      position: relative;
+      flex-direction: column;
+      
+    }
+    .izquierdo{
+        width: 100%;
+    }
+    .derecho{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .botones{
+        width: 100%;
+        display: flex;
+        position: relative;
+        top: -2%;
+    }
+    .contenedorImg{
+        display: inline-block;
+        width: 100%;
+        height: 40%;
+        left: 20%;
+        box-sizing: border-box;
+    }
+    
+    .letras{
+        display: flex;
+        position: absolute;
+        top: 52%;
+    }
+    .ladoDer{
+        width: 90%;
+        display: flex;
+        position: relative;
+        top: -2%;
+    }
+    .btncopiar{
+        display: flex;
+        position: absolute;
+        left: 29%;
+        top: 82%;
+    }
+    .btn1, .btn2{
+        height: 47px;
+        width: 150px;
+    }
+  }
