@@ -245,6 +245,7 @@
     .titulo{
         left: 30%;
         font-weight: 400;
+        font-size: 24px; 
     }
     .contenedor {
       width: 100%;
